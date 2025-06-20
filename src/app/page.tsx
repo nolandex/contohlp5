@@ -6,7 +6,6 @@ import { useTheme } from 'next-themes';
 import FeaturedIn from "@components/FeaturedIn";
 import ProblemsComponents from "@components/Problems";
 import FeaturesListicle from "@components/FeaturesListicle";
-import About from "@components/About";
 import Pricing from "@components/Pricing";
 import FAQ from "@components/FAQ";
 import CTA from "@components/CTA";
@@ -31,7 +30,7 @@ export default function Home() {
       <ProblemsComponents />
       <FeaturesListicle />
       {/* <FeaturesCarousel/> */}
-      <About />
+      {/* <About /> */} {/* Section About telah dihapus */}
       <Pricing />
       <Testimonials11 />
       <FAQ />
