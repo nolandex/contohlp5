@@ -12,7 +12,7 @@ import FAQ from "@components/FAQ";
 import CTA from "@components/CTA";
 import Testimonials11 from "@components/TestinomialGrid";
 import HeroCenter from "@components/Hero/HeroCenter";
-import MarqueeFeaturedIn from "@components/featuredIn/marqeeLogos";
+// import MarqueeFeaturedIn from "@components/featuredIn/marqeeLogos";
 import ImageCardGrid from "@components/ImageCardsGrid";
 import NumberCardGrid from "@components/NumberCardsGrid";
 import IconCardGrid from "@components/IconCardsGrid";
@@ -20,25 +20,22 @@ import FeaturesCarousel from "@components/FeatureCarousel";
 import ImageContainer from "@components/atoms/Cards/Image/ImageContainer";
 
 export default function Home() {
- 
-
   return (
-    <main className=" min-h-screen">
-        <Hero />
-        {/* <HeroCenter/> */}
-        {/* <FeaturedIn /> */}
-        
-       
-        <MarqueeFeaturedIn speed={15}/>
-        <ProblemsComponents />
-        <FeaturesListicle />
-        {/* <FeaturesCarousel/> */}
-        <About />
-        <Pricing />
-        <Testimonials11 />
-        <FAQ/> 
-        <CTA />
-       
+    <main className="min-h-screen">
+      <Hero />
+      {/* <HeroCenter/> */}
+      {/* <FeaturedIn /> */}
+
+      {/* <MarqueeFeaturedIn speed={15}/> */}
+
+      <ProblemsComponents />
+      <FeaturesListicle />
+      {/* <FeaturesCarousel/> */}
+      <About />
+      <Pricing />
+      <Testimonials11 />
+      <FAQ />
+      <CTA />
     </main>
   );
 }
