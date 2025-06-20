@@ -1,195 +1,137 @@
 {
-        "sectionId": "pricing",
-        "backgroundColor": "bg-base-200",
-        "header": {
-          "title": "Pricing",
-          "titleClass": "font-medium text-primary mb-8",
-          "heading": "Bypass complex boilerplates, create, validate and launch quickly!",
-          "headingClass": "font-bold text-3xl lg:text-5xl tracking-tight mb-8 max-w-2xl mx-auto",
-          "offer": {
-            "text": "50% off for the first 4440 customers",
-            "textClass": "text-sm md:text-base flex justify-center items-center gap-2",
-            "highlighted_text": "50% off"
-          }
+  "sectionId": "pricing",
+  "backgroundColor": "bg-base-200",
+  "header": {
+    "title": "Pricing",
+    "titleClass": "font-medium text-primary mb-8",
+    "heading": "Bypass complex boilerplates, create, validate and launch quickly!",
+    "headingClass": "font-bold text-3xl lg:text-5xl tracking-tight mb-8 max-w-2xl mx-auto",
+    "offer": {
+      "text": "Diskon 50% untuk 4440 pelanggan pertama",
+      "textClass": "text-sm md:text-base flex justify-center items-center gap-2",
+      "highlighted_text": "Diskon 50%"
+    }
+  },
+  "plans": [
+    {
+      "name": "Starter",
+      "originalPrice": "4100000",
+      "discountedPrice": "0",
+      "currency": "IDR",
+      "popular": false,
+      "features": {
+        "feature1": {
+          "text": "NextJS & Typescript boilerplate",
+          "disabled": false,
+          "highlighted_text": "NextJS & Typescript",
+          "overall_highlighted": false,
+          "links": [],
+          "tags": [],
+          "hover_text": "This is a NextJS boilerplate"
         },
-        "plans": [
-          {
-            "name": "Starter",
-            "originalPrice": "₹4,100",
-            "discountedPrice": "₹0",
-            "currency": "INR",
-            "popular": false,
-            "features": {
-                "feature1": {
-                  "text": "NextJS & Typescript boilerplate",
-                  "disabled": false,
-                  "highlighted_text": "NextJS & Typescript",
-                  "overall_highlighted": false,
-                  "links": [
-                    {
-                      "text": "NextJS",
-                      "url": "https://nextjs.org"
-                    }
-                  ],
-                  "tags": ["boilerplate", "NextJS"],
-                  "hover_text": "This is a NextJS boilerplate"
-                },
-                "feature2": {
-                  "text": "Email Integration",
-                  "disabled": false,
-                  "highlighted_text": "Email",
-                  "overall_highlighted": false,
-                  "links": [
-                    {
-                      "text": "Another",
-                      "url": "https://example.com"
-                    }
-                  ],
-                  "tags": ["example", "feature"],
-                  "hover_text": "This is another feature"
-                },
-                "feature3": {
-                  "text": "Create Wishlists easily",
-                  "disabled": false,
-                  "highlighted_text": "Email",
-                  "overall_highlighted": false,
-                  "links": [
-                    {
-                      "text": "Another",
-                      "url": "https://example.com"
-                    }
-                  ],
-                  "tags": ["example", "feature"],
-                  "hover_text": "This is another feature"
-                },
-                "feature4": {
-                  "text": "Stripe Payment Integration",
-                  "disabled": false,
-                  "highlighted_text": "Stripe",
-                  "overall_highlighted": false,
-                  "links": [
-                    {
-                      "text": "Stripe",
-                      "url": "https://example.com"
-                    }
-                  ],
-                  "tags": ["example", "feature"],
-                  "hover_text": "This is another feature"
-                },
-                "feature5": {
-                  "text": "Chatgpt Agent for creating JSON",
-                  "disabled": false,
-                  "highlighted_text": "Chatgpt Agent",
-                  "overall_highlighted": false,
-                  "links": [
-                    {
-                      "text": "Chatgpt Agent",
-                      "url": "https://example.com"
-                    }
-                  ],
-                  "tags": ["example", "feature"],
-                  "hover_text": "This is another feature"
-                },
-                "feature6": {
-                  "text": "Founders Club Access",
-                  "disabled": true,
-                  "highlighted_text": "Founders Club Access",
-                  "overall_highlighted": true,
-                  "links": [
-                    {
-                      "text": "Founders Club Access",
-                      "url": "https://example.com"
-                    }
-                  ],
-                  "tags": ["example", "feature"],
-                  "hover_text": "This is another feature"
-                },
-                "feature7": {
-                  "text": "Life time updates",
-                  "disabled": true,
-                  "highlighted_text": "Life time updates",
-                  "overall_highlighted": true,
-                  "links": [
-                    {
-                      "text": "Founders Club Access",
-                      "url": "https://example.com"
-                    }
-                  ],
-                  "tags": ["example", "feature"],
-                  "hover_text": "This is another feature"
-                },
-                "feature8": {
-                  "text": "SEO & Blogs",
-                  "disabled": true,
-                  "highlighted_text": "",
-                  "overall_highlighted": false,
-                  "links": [
-                    {
-                      "text": "",
-                      "url": ""
-                    }
-                  ],
-                  "tags": ["example", "feature"],
-                  "hover_text": "See the List of all the UI components"
-                },
-                "feature9": {
-                  "text": "Dashboard & User Authentication",
-                  "disabled": true,
-                  "highlighted_text": "",
-                  "overall_highlighted": true,
-                  "links": [
-                    {
-                      "text": "",
-                      "url": ""
-                    }
-                  ],
-                  "tags": ["example", "feature"],
-                  "hover_text": "See the List of all the UI components"
-                },
-              "feature10": {
-                  "text": "Backend (Supabase)",
-                  "disabled": true,
-                  "highlighted_text": "Backend",
-                  "overall_highlighted": false,
-                  "links": [
-                    {
-                      "text": "Backend",
-                      "url": ""
-                    }
-                  ],
-                
-                  "tags": ["example", "feature"],
-                  "hover_text": "See the List of all the UI components"
-                },
-              "feature11": {
-                  "text": "GoogleAuth & 2FA",
-                  "disabled": true,
-                  "highlighted_text": "",
-                  "overall_highlighted": false,
-                  "links": [
-                    {
-                      "text": "Founders Club Access",
-                      "url": "https://example.com"
-                    }
-                  ],
-                  "tags": [""],
-                  "hover_text": "This is another feature"
-                }
-
-              },
-            "buttonText": "Start Free",
-            "btnLink": "https://github.com/chiragksharma/BuildFast",
-            "buttonClass": "btn btn-primary group btn-block",
-            "note": "STAR the repo on Github",
-            "noteClass": "flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative"
-          }
-         
-        ],
-        "testimonial": {
-          "text": "I was able to launch my project in just one day! I made 170$ already.",
-          "author": "Mateus De Nardo",
-          "badge": "Built a SaaS",
-          "badgeClass": "badge badge-accent badge-outline",
-          "containerClass": "space-y-4 mx-auto max-w-md mt-24"
+        "feature2": {
+          "text": "Email Integration",
+          "disabled": false,
+          "highlighted_text": "Email",
+          "overall_highlighted": false,
+          "links": [],
+          "tags": [],
+          "hover_text": "This is another feature"
+        },
+        "feature3": {
+          "text": "Create Wishlists easily",
+          "disabled": false,
+          "highlighted_text": "Wishlists",
+          "overall_highlighted": false,
+          "links": [],
+          "tags": [],
+          "hover_text": "This is another feature"
+        },
+        "feature4": {
+          "text": "Stripe Payment Integration",
+          "disabled": false,
+          "highlighted_text": "Stripe",
+          "overall_highlighted": false,
+          "links": [],
+          "tags": [],
+          "hover_text": "This is another feature"
+        },
+        "feature5": {
+          "text": "Chatgpt Agent for creating JSON",
+          "disabled": false,
+          "highlighted_text": "Chatgpt Agent",
+          "overall_highlighted": false,
+          "links": [],
+          "tags": [],
+          "hover_text": "This is another feature"
+        },
+        "feature6": {
+          "text": "Founders Club Access",
+          "disabled": false,
+          "highlighted_text": "Founders Club Access",
+          "overall_highlighted": true,
+          "links": [],
+          "tags": [],
+          "hover_text": "This is another feature"
+        },
+        "feature7": {
+          "text": "Life time updates",
+          "disabled": false,
+          "highlighted_text": "Life time updates",
+          "overall_highlighted": true,
+          "links": [],
+          "tags": [],
+          "hover_text": "This is another feature"
+        },
+        "feature8": {
+          "text": "SEO & Blogs",
+          "disabled": false,
+          "highlighted_text": "",
+          "overall_highlighted": false,
+          "links": [],
+          "tags": [],
+          "hover_text": "See the List of all the UI components"
+        },
+        "feature9": {
+          "text": "Dashboard & User Authentication",
+          "disabled": false,
+          "highlighted_text": "",
+          "overall_highlighted": true,
+          "links": [],
+          "tags": [],
+          "hover_text": "See the List of all the UI components"
+        },
+        "feature10": {
+          "text": "Backend (Supabase)",
+          "disabled": false,
+          "highlighted_text": "Backend",
+          "overall_highlighted": false,
+          "links": [],
+          "tags": [],
+          "hover_text": "See the List of all the UI components"
+        },
+        "feature11": {
+          "text": "GoogleAuth & 2FA",
+          "disabled": false,
+          "highlighted_text": "GoogleAuth",
+          "overall_highlighted": false,
+          "links": [],
+          "tags": [],
+          "hover_text": "This is another feature"
         }
+      },
+      "buttonText": "Mulai Gratis",
+      "btnLink": "https://github.com/chiragksharma/BuildFast",
+      "buttonClass": "btn btn-primary group btn-block",
+      "note": "Beri bintang di GitHub ⭐",
+      "noteClass": "flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative"
+    }
+  ],
+  "testimonial": {
+    "text": "Saya bisa meluncurkan proyek saya dalam satu hari! Sudah dapat Rp2.800.000.",
+    "author": "Mateus De Nardo",
+    "badge": "Bangun SaaS",
+    "badgeClass": "badge badge-accent badge-outline",
+    "containerClass": "space-y-4 mx-auto max-w-md mt-24"
+  }
 }
