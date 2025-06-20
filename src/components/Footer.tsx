@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import siteConfig from '@config/siteConfig.json';
 import { RocketLaunch } from 'phosphor-react';
 import FooterConfig from '@config/footer/footer.json';
@@ -36,7 +36,9 @@ const Footer: React.FC = () => {
                             <div key={index} className='lg:w-1/3 md:w-1/2 w-full px-4'>
                                 <div className="font-semibold text-foreground-hsl/65 tracking-widest text-sm md:text-left mb-3">{section.title}</div>
                                 <div className='flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm'>
-                                    {section.links.map((link, linkIndex) => (
+                                    {section.links
+                                      .filter((link) => link.text !== "Affiliates — Earn up to $99 per sale")
+                                      .map((link, linkIndex) => (
                                         <a key={linkIndex} className="hover:underline" href={link.href}>{link.text}</a>
                                     ))}
                                 </div>
