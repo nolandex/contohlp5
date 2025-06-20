@@ -2,7 +2,7 @@
   "brand": "BuildFast",
   "logo": "RocketLaunch",
   "links": [
-    { "text": "Fitur", "href": "#featuresListicle" },
+    { "text": "Fitur", "href": "#features" },
     { "text": "Pricing", "href": "#pricing" },
     { "text": "Reviews", "href": "#testinomials" }
   ],
