@@ -4,56 +4,47 @@ import Features from '@components/atoms/FeatureDetails';
 import FeaturesListicleConfig from '@config/features/featuresListicle.json';
 import { getIconByName } from '@utils/getIconFromName';
 
-
-
-
 const FeaturesListicle: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
     const [toggleClicked, setToggleClicked] = useState<boolean>(false);
     const { heading, description, features, automatic_timer } = FeaturesListicleConfig;
 
-    // Iterate over all the features and call the after every 5 seconds which means it should be a carousel of features changing after every 5 seconds
     useEffect(() => {
-        if(automatic_timer){
-        const interval = setInterval(() => {
-            if(!toggleClicked) {
-                setActiveIndex((prev) => {
-                    if (prev === null || prev === features.length - 1) {
-                        return 0;
-                    } else {
-                        return prev + 1;
-                    }
-                });
-            }
-        }, 5000);
-        return () => clearInterval(interval);
-    }
-    }, [features.length,toggleClicked,automatic_timer]);
-
+        if (automatic_timer) {
+            const interval = setInterval(() => {
+                if (!toggleClicked) {
+                    setActiveIndex((prev) => {
+                        if (prev === null || prev === features.length - 1) {
+                            return 0;
+                        } else {
+                            return prev + 1;
+                        }
+                    });
+                }
+            }, 5000);
+            return () => clearInterval(interval);
+        }
+    }, [features.length, toggleClicked, automatic_timer]);
 
     const toggleAccordion = (index: number) => {
         setActiveIndex(index);
         setToggleClicked(true);
-
         setTimeout(() => {
             setToggleClicked(false);
         }, 10000);
     };
 
     return (
-        <section className='py-24' id='features' >
+        <section className='pt-24 pb-8' id='features'>
             <div className='max-w-3xl mx-auto'>
-                <div className=' max-md:px-8 max-w-3xl'>
-                    {/* <p className='text-accent font-medium text-sm font-mono mb-3'>
-                    {quote}
-                    </p> */}
+                <div className='max-md:px-8 max-w-3xl'>
                     <h2 className="font-bold text-3xl lg:text-5xl tracking-tight mb-8">{heading}</h2>
                     <div className="font-normal leading-relaxed mb-8 lg:text-lg">
-                    {description}
+                        {description}
                     </div>
                 </div>
                 <div>
-                <div className='grid grid-cols-4 md:flex justify-start max-md:px-8 max-w-3xl mx-auto'>
+                    <div className='grid grid-cols-4 md:flex justify-start max-md:px-8 max-w-3xl mx-auto'>
                         {features.map((feature, index) => {
                             const IconOrPath = getIconByName(feature.icon);
                             return (
@@ -65,21 +56,18 @@ const FeaturesListicle: React.FC = () => {
                                     onClick={() => toggleAccordion(index)}
                                 >
                                     <span>
-                                    {typeof IconOrPath === 'string' ? (
-                                        <img src={IconOrPath} alt={feature.title} width={24} height={24} />
+                                        {typeof IconOrPath === 'string' ? (
+                                            <img src={IconOrPath} alt={feature.title} width={24} height={24} />
                                         ) : (
-                                        <IconOrPath size={24} />
-                                    )}                                   
+                                            <IconOrPath size={24} />
+                                        )}
                                     </span>
-                                    <span>
-                                        {feature.title}
-                                    </span>
+                                    <span>{feature.title}</span>
                                 </span>
                             );
                         })}
                     </div>
                 </div>
-
             </div>
             <div className='w-full bg-background-secondary'>
                 <Features
@@ -88,7 +76,6 @@ const FeaturesListicle: React.FC = () => {
                     toggleAccordion={toggleAccordion}
                 />
             </div>
-            
         </section>
     );
 };
