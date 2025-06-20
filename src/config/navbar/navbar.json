@@ -11,7 +11,7 @@
     "href": "https://wa.me/6285156779923"
   },
   "mobileMenu": [
-    { "text": "Fitur", "href": "#featuresListicle" },
+    { "text": "Fitur", "href": "#features" },
     { "text": "Pricing", "href": "#pricing" },
     { "text": "Reviews", "href": "#testinomials" }
   ]
